@@ -1,13 +1,18 @@
 import ScrollingBanner from "../components/ScrollingBanner";
+import Head from "next/head";
+// import dynamic from "next/dynamic";
+import OurCar from "../components/Carousel";
+import SolatTimes from "../components/SolatTimes";
 
-function Entrypoint() {
+export default function Entrypoint() {
   return (
-      <>
-    <div>
-      <h1>Hello World</h1>
-      <p>This is a simple example of a React component.</p>
-    </div>
+    <>
+      <Head>
+        <title>Entrypoint</title>
+      </Head>
+      <SolatTimes />
+      <OurCar />
       <ScrollingBanner />
-      </>
+    </>
   );
 }
